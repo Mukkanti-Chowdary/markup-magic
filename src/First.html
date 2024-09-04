@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <div><img
+                src="https://cdn.vectorstock.com/i/500p/74/45/job-portal-lettering-logo-design-template-concept-vector-37017445.jpg"
+                alt="logo"></div>
+        <div>
+            <h1>Mama Job Portal</h1>
+        </div>
+    </div>
+    <div class="img1"><img src="download.jpeg"></div>
+    <h2>About Team</h2>
+    <div class="first">
+        <div class="about">
+
+            <p>We are dedicated to bridging the gap between academic achievement and professional success. We understand
+                that today's students are tomorrow's leaders, and we are committed to providing them with the resources
+                and opportunities they need to thrive in the workforce.
+                Our mission is to connect students with meaningful job opportunities that align with their career goals
+                and academic backgrounds.
+                We aim to empower students by providing them with the tools, guidance, and support they need to embark
+                on successful career paths.</p>
+            <h4>We recently launched two major Bootcamps : </h4>
+            <ol>
+                <li><a href="https://jovian.com/learn/web-development-with-html-and-css" target="_blank">Learn Web
+                        Development with HTML & CSS</a></li>
+                <li><a href="https://jovian.com/learn/data-structures-and-algorithms-in-python" target="_blank">Data
+                        Structures and Algorithms in Python</a></li>
+            </ol>
+        </div>
+        <div class="img2">
+            <img src="team.jpeg" height=250px>
+        </div>
+    </div>
+    <h2>Job opportunities</h2>
+    <div class="job">
+        <table>
+            <tr class = "job-header">
+                <th rowspan = "2">Job Title</th>
+                <th colspan = "2">Location</th>
+                <th rowspan="2">Salary</th>
+                <th rowspan = "2">Posted</th>
+            </tr>
+            <tr class = "job-header">
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            <tr class = "job-data">
+                <td>Data Scientist</td>
+                <td>Bengaluru</td>
+                <td>India</td>
+                <td>&#8377 6,00,00</td>
+                <td>July 30, 2024</td>
+            </tr>
+            <tr class = "job-data">
+                <td>Full Stack Developer</td>
+                <td>Delhi</td>
+                <td>India</td>
+                <td>&#8377 7,00,000</td>
+                <td>August 2, 2024</td>
+            </tr>
+            <tr class = "job-data">
+                <td>Python Developer</td>
+                <td>New York</td>
+                <td>USA</td>
+                <td>&#36 80,00</td>
+                <td>July 25, 2024</td>
+            </tr>
+            <tr class = "job-data">
+                <td>Java Full Stack Developer</td>
+                <td colspan = "2">Remote</td>
+                <td>&#36 95,000</td>
+                <td>July 5, 2024</td>
+            </tr>
+        </table>
+    </div>
+    <h3>Submit Your Application</h3>
+    <div id = "application">
+        <form action="https://formbold.com/s/6rgKr" method = "POST" enctype="multipart/form-data" target="_blank">
+            <div class = "form-group">
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" placeholder = "John Doe" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" name = "email" id = "email" placeholder = "john.doe@gamail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" name="phone" id="phone" placeholder = 9090909090 required>           
+            </div>
+            <div class="form-group">
+                <label for="date">Date of Birth</label><br>
+                <input type="date" name="Date Of Birth" id="date" required>
+            </div>
+            <div class = "form-group">
+                <label for="select">Position is Applied for : </label><br>
+
+                <select name="Select" id="select">
+                    <option value="">Select</option>
+                    <option value="Data Scientist">Data Scientist</option>
+                    <option value="Full Stack Developer">Full Stack Developer</option>
+                    <option value="Python Developer">Python Developer</option>
+                    <option value="Java Full Stack">Java Full Stack Developer</option>
+                </select>
+            </div>
+           <div class="form-group">
+                <label for="resume">Upload Resume</label><br>
+                <input type="file" name="resume" id="resume" accept = .doc,.pdf,.txt required>
+           </div>
+           <div class="form-group">
+            <label for="cover">Cover Letter</label><br>
+            <textarea name="cover" id="cover" rows = 5 placeholder="Why you are applying for this job?"></textarea>
+           </div>
+           <div class="form-group">
+            <label for="check"><input type="checkbox" name="check" id="check">
+                I am agree terms and conditions</label>
+            
+           </div>
+           <div class="form-group">
+                <input type="submit" value="Submit">
+           </div>
+        </form>
+    </div>
+    <div class="footer">
+        <ul class="footer-links">
+            <li><a href="www.youtube.com" target="_blank">Youtube</a></li>
+            <li><a href="www.course.com" target="_blank">Course</a></li>
+            <li><a href="www.program.com" target="_blank">Programs</a></li>
+        </ul>
+        <div>&copy; Rights Reserved 2024</div>
+    </div>
+</body>
+
+</html>
